@@ -16,12 +16,12 @@
         android:actionViewClass="android.widget.AutoCompleteTextView"
         android:inputType="textAutoComplete|textAutoCorrect"
         app:actionLayout="@layout/search_custom"
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="@mipmap/ic_search_white_48dp"
         app:showAsAction="ifRoom|collapseActionView" />
 
     <item
-        android:id="@+id/action_sort"
-        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:id="@+id/action_notification"
+        android:icon="@mipmap/ic_menu_white_48dp"
         app:showAsAction="ifRoom"
         android:title="Sort" />
 </menu>

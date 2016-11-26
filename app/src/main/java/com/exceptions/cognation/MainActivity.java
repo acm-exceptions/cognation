@@ -1,12 +1,14 @@
 package com.exceptions.cognation;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -88,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId())
         {
             case R.id.action_search:
+                return true;
+            case R.id.action_notification:
+                startActivity(new Intent(MainActivity.this, NotificationActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
