@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#eeeeee"
-    tools:context="com.exception.jayus.ProfileFragment">
+    tools:context="com.exceptions.cognation.ProfileFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

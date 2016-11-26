@@ -1,35 +1,66 @@
 {
   "project_info": {
-    "project_number": "769571247021",
-    "firebase_url": "https://jayus-cfc53.firebaseio.com",
-    "project_id": "jayus-cfc53",
-    "storage_bucket": "jayus-cfc53.appspot.com"
+    "project_number": "955165169923",
+    "firebase_url": "https://cognation-1177a.firebaseio.com",
+    "project_id": "cognation-1177a",
+    "storage_bucket": "cognation-1177a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:769571247021:android:e86516780af9c66d",
+        "mobilesdk_app_id": "1:955165169923:android:d5d1b49b2b28f473",
         "android_client_info": {
-          "package_name": "com.exception.jayus"
+          "package_name": "com.exceptions.cognation"
         }
       },
       "oauth_client": [
         {
-          "client_id": "769571247021-cr590ao89l0cq2c5sebomqk7qhpto9e0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.exception.jayus",
-            "certificate_hash": "2BE09AE06C79355EB6BD4D73533BA52E676C63F1"
-          }
-        },
-        {
-          "client_id": "769571247021-3tgug84rjurj0pflhf4ghrjubuka31so.apps.googleusercontent.com",
+          "client_id": "955165169923-k8o22ciotl7nj7q7b6gqtik8233vv8mj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCq8lq1Z0AtqmSYA0DklsDpc3Rt4beyABE"
+          "current_key": "AIzaSyDZcU01qVQsM9EZdBwt5TIRwut6TGPZRNI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955165169923:android:374b646dc4e383b0",
+        "android_client_info": {
+          "package_name": "com.chatt.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955165169923-9g7abuac2n8hkce2mns07qkffdmovrih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chatt.demo",
+            "certificate_hash": "D1189CD16CE4534770007C85F2D4813A586F9593"
+          }
+        },
+        {
+          "client_id": "955165169923-k8o22ciotl7nj7q7b6gqtik8233vv8mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZcU01qVQsM9EZdBwt5TIRwut6TGPZRNI"
         }
       ],
       "services": {
@@ -40,7 +71,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "769571247021-3tgug84rjurj0pflhf4ghrjubuka31so.apps.googleusercontent.com",
+              "client_id": "955165169923-k8o22ciotl7nj7q7b6gqtik8233vv8mj.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

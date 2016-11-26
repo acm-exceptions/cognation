@@ -1,17 +1,12 @@
-package com.exception.jayus;
+package com.exceptions.cognation;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 public class CustomDialog extends DialogFragment
 {

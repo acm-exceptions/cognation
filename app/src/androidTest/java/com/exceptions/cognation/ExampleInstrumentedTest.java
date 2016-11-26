@@ -1,4 +1,4 @@
-package com.exception.jayus;
+package com.exceptions.cognation;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

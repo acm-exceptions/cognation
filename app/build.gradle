@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25"
     defaultConfig {
-        applicationId "com.exception.jayus"
+        applicationId "com.exceptions.cognation"
         minSdkVersion 19
         targetSdkVersion 25
         versionCode 1

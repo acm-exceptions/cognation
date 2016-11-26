@@ -1,5 +1,6 @@
-package com.exception.jayus;
+package com.exceptions.cognation;
 
+import android.content.Context;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -9,6 +10,17 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.TextView;
+
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +67,33 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+
+        AutoCompleteTextView mAutoCompleteTextView = (AutoCompleteTextView) menu.findItem(R.id.action_search).getActionView();
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+
+        mAutoCompleteTextView.setMinWidth(displayMetrics.widthPixels - 400);
+
+        String[] items = {"ABC", "ABB", "ABD", "ACB", "ACD", "BCD", "BDC"};
+
+        mAutoCompleteTextView.setAdapter(new ArrayAdapter(MainActivity.this, R.layout.search_custom_listitem, Arrays.asList(items)));
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.action_search:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
     private class CustomPagerAdapter extends FragmentPagerAdapter {
 
         public CustomPagerAdapter(FragmentManager fm) {
@@ -72,6 +111,30 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             return 4;
+        }
+    }
+
+    private class CustomArrayAdapter extends ArrayAdapter {
+
+        private Context context;
+        private String[] items;
+
+        public CustomArrayAdapter(Context context, String[] items) {
+            super(context, android.R.layout.simple_list_item_1);
+            this.context = context;
+            this.items = items;
+        }
+
+        @Override
+        public int getCount() {
+            return items.length;
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            View v = LayoutInflater.from(context).inflate(R.layout.search_custom_listitem, null);
+            ((TextView) v.findViewById(R.id.search_custom_tv)).setText(items[i]);
+            return v;
         }
     }
 }

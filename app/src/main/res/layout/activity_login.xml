@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2c3e50"
-    tools:context="com.exception.jayus.LoginActivity">
+    tools:context="com.exceptions.cognation.LoginActivity">
 
     <com.daimajia.slider.library.SliderLayout
         android:layout_width="match_parent"

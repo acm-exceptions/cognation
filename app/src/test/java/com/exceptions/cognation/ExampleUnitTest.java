@@ -1,4 +1,4 @@
-package com.exception.jayus;
+package com.exceptions.cognation;
 
 import org.junit.Test;
 

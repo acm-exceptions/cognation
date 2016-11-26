@@ -1,4 +1,4 @@
-package com.exception.jayus;
+package com.exceptions.cognation;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

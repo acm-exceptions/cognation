@@ -1,4 +1,4 @@
-package com.exception.jayus;
+package com.exceptions.cognation;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
