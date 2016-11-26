@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,10 +14,13 @@ import android.widget.Toast;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.exceptions.cognation.model.ChatUser;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -80,6 +84,14 @@ public class LoginActivity extends AppCompatActivity {
                     if (!task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "You have entered an invalid email/password!", Toast.LENGTH_LONG).show();
                     }
+                    ArrayList<String> defaultRoom = new ArrayList<String>();
+                    defaultRoom.add("home");
+                    Log.d("TEST", task.getResult().getUser().getUid());
+                    ChatFragment.user = new ChatUser(task.getResult().getUser().getUid(),
+                            task.getResult().getUser().getDisplayName(),
+                            task.getResult().getUser().getEmail(),
+                            true,
+                            defaultRoom);
                     mProgress.dismiss();
                 }
             });

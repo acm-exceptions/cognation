@@ -1,5 +1,7 @@
 package com.exceptions.cognation.model;
 
+import android.util.Log;
+
 import com.exceptions.cognation.ChatFragment;
 //import com.exceptions.cognation.UserList;
 
@@ -91,6 +93,8 @@ public class Conversation
 	public boolean isSent()
 	{
 		return ChatFragment.user.getId().contentEquals(sender);
+		//Log.d("ASD",ChatFragment.user.getId() + " ");
+		//return true;
 	}
 
 	/**
