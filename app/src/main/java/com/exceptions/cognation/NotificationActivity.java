@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -84,5 +85,17 @@ public class NotificationActivity extends AppCompatActivity {
             Picasso.with(context).load("https://www.techinasia.com/assets/images/profile/icon-defaultprofile.png").into(((ImageView) v.findViewById(R.id.iv_notificationlistitem)));
             return v;
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
