@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3e50"
+    tools:context="com.exception.jayus.LoginActivity">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/sl">
+    </com.daimajia.slider.library.SliderLayout>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="Cognation"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_login_password"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:hint="Employee Number"
+        android:id="@+id/et_login_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_login"
+        android:inputType="textPassword"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:hint="Password"
+        android:textColorHighlight="@color/colorAccent"
+        android:id="@+id/et_login_password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Log In"
+        android:id="@+id/btn_login"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>

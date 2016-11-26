@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "769571247021",
+    "firebase_url": "https://jayus-cfc53.firebaseio.com",
+    "project_id": "jayus-cfc53",
+    "storage_bucket": "jayus-cfc53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769571247021:android:e86516780af9c66d",
+        "android_client_info": {
+          "package_name": "com.exception.jayus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769571247021-cr590ao89l0cq2c5sebomqk7qhpto9e0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exception.jayus",
+            "certificate_hash": "2BE09AE06C79355EB6BD4D73533BA52E676C63F1"
+          }
+        },
+        {
+          "client_id": "769571247021-3tgug84rjurj0pflhf4ghrjubuka31so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq8lq1Z0AtqmSYA0DklsDpc3Rt4beyABE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769571247021-3tgug84rjurj0pflhf4ghrjubuka31so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
