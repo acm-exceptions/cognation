@@ -41,13 +41,21 @@
             android:value="@string/facebook_app_id" />
 
         <activity android:name=".SignupActivity" />
-        <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".NotificationActivity" />
         <activity
-            android:name="Chat"
+            android:name=".Chat"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" >
-        </activity>
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".AnnouncementActivity" />
+        <activity android:name=".LeaveManagementActivity" />
+        <activity android:name=".PayrollManagementActivity" />
+        <activity android:name=".WorkSchedule"/>
+
+        <provider
+            android:name="com.exceptions.cognation.CalendarProvider"
+            android:authorities="com.exceptions.cognation.calendarprovider" />
+
     </application>
 
 </manifest>

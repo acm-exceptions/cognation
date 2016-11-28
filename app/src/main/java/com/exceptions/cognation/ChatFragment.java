@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +28,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -149,10 +151,10 @@ public class ChatFragment extends Fragment {
         {
             if (v == null)
                 v = getActivity().getLayoutInflater().inflate(R.layout.chat_item, null);
-
+            Picasso.with(getActivity().getApplicationContext()).load("https://www.techinasia.com/assets/images/profile/icon-defaultprofile.png").into(((ImageView) v.findViewById(R.id.iv_notificationlistitemimg)));
             ChatUser c = getItem(pos);
             Log.d("POSPO",pos+"");
-            TextView lbl = (TextView) v;
+            TextView lbl = (TextView) v.findViewById(R.id.txt_notif);
             lbl.setText(c.getUsername());
             lbl.setCompoundDrawablesWithIntrinsicBounds(
                     c.isOnline() ? R.drawable.ic_online

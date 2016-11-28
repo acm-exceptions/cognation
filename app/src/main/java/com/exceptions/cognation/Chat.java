@@ -117,6 +117,7 @@ public class Chat extends CustomActivity {
     @Override
     protected void onPause() {
         super.onPause();
+
     }
 
     /* (non-Javadoc)

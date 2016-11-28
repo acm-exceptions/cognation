@@ -23,5 +23,5 @@
         android:id="@+id/action_notification"
         android:icon="@mipmap/ic_menu_white_48dp"
         app:showAsAction="ifRoom"
-        android:title="Sort" />
+        android:title="Notification" />
 </menu>

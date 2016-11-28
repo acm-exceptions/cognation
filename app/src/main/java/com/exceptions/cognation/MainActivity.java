@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
         mTabLayout.getTabAt(0).setIcon(R.drawable.icon_home);
         mTabLayout.getTabAt(1).setIcon(R.drawable.icon_chat);
-        mTabLayout.getTabAt(2).setIcon(R.drawable.icon_notifications);
-        mTabLayout.getTabAt(3).setIcon(R.drawable.icon_profile);
+//        mTabLayout.getTabAt(2).setIcon(R.drawable.icon_notifications);
+        mTabLayout.getTabAt(2).setIcon(R.drawable.icon_profile);
 
 
         mTabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager){
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         AutoCompleteTextView mAutoCompleteTextView = (AutoCompleteTextView) menu.findItem(R.id.action_search).getActionView();
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
 
-        mAutoCompleteTextView.setMinWidth(displayMetrics.widthPixels - 400);
+        mAutoCompleteTextView.setMinWidth(displayMetrics.widthPixels);
 
         String[] items = {"ABC", "ABB", "ABD", "ACB", "ACD", "BCD", "BDC"};
 
@@ -107,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             switch (position) {
+                case 0:
+                    return new NewsfeedFragment();
                 case 1:
                     return new ChatFragment();
                 default:
@@ -116,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 4;
+            return 3;
         }
     }
 

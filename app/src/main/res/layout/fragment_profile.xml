@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,77 +8,106 @@
     android:background="#eeeeee"
     tools:context="com.exceptions.cognation.ProfileFragment">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:paddingBottom="25dp">
+        android:id="@+id/ll_profile_2">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:orientation="vertical"
-            android:background="@color/colorPrimary"
-            android:id="@+id/ll_profile"/>
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_below="@id/ll_profile"
-            android:layout_marginTop="-50dp"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/iv_avatar"/>
-
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_below="@id/ll_profile"
-            android:layout_marginTop="-12dp"
-            android:layout_toRightOf="@id/iv_avatar"
-            android:id="@+id/iv_takePhoto"
-            android:src="@drawable/icon_takephoto" />
-
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_avatar"
-            android:layout_marginTop="25dp"
-            android:layout_centerHorizontal="true"
-            android:text="Marvin Jason Sy"
-            android:textStyle="normal"
-            android:textSize="20sp"
-            android:id="@+id/tv_name"/>
+            android:background="#ffffff"
+            android:paddingBottom="25dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:text="Student"
-            android:textStyle="normal"
-            android:textSize="12sp"
-            android:id="@+id/tv_occupation"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:id="@+id/ll_profile"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_occupation"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:text="FEU Institute of Technology"
-            android:textStyle="normal"
-            android:textSize="12sp"
-            android:id="@+id/tv_company"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/ll_profile"
+                android:layout_marginTop="-50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_avatar"/>
 
-    </RelativeLayout>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/ll_profile"
+                android:layout_marginTop="-12dp"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:id="@+id/iv_takePhoto"
+                android:src="@drawable/icon_takephoto" />
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lv_profile"
-        android:background="#ffffff"
-        android:layout_marginTop="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_avatar"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="Marvin Jason Sy"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:id="@+id/tv_name"/>
 
-</LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Student"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:id="@+id/tv_occupation"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_occupation"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="FEU Institute of Technology"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:id="@+id/tv_company"/>
+
+        </RelativeLayout>
+
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/lv_profile_1"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_marginTop="20dp" />-->
+
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/lv_profile_2"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_marginTop="20dp" />-->
+
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/lv_profile_3"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_marginTop="20dp" />-->
+
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/lv_profile_4"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_marginTop="20dp" />-->
+
+    </LinearLayout>
+
+</ScrollView>

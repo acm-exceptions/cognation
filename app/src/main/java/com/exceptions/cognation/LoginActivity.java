@@ -60,7 +60,6 @@ public class LoginActivity extends AppCompatActivity {
                 if (firebaseAuth.getCurrentUser() != null) {
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     finish();
-                    Toast.makeText(LoginActivity.this, firebaseAuth.getCurrentUser().getEmail(), Toast.LENGTH_LONG).show();
                 }
             }
         });

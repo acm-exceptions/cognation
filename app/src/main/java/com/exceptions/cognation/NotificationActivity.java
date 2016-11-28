@@ -32,7 +32,7 @@ public class NotificationActivity extends AppCompatActivity {
         List<Notif> list = new ArrayList();
 
         for (int i = 0; i < 25; i++) {
-            list.add(new Notif("MARCOS PA RIN MGA ULOL sent you a message.", 300));
+            list.add(new Notif("Gino sent you a message.", 300 + i * 20));
         }
 
         mListView = (ListView) findViewById(R.id.lv_notification);

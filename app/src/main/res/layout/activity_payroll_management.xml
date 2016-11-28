@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d3d3d3"
+        android:orientation="vertical"
+        tools:context="com.exception.payroll.MainActivity">
+
+        <LinearLayout
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="26sp"
+                android:text="Pay Statements"
+                android:textColor="#008080"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="#FFF"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:text="Date"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:text="Gross"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross" />
+
+            <TextView
+                android:layout_marginRight="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:text="Net"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/tvGross"
+                android:id="@+id/tvNet" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="NOV 18 2016"
+                android:id="@+id/tvDate1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross1" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="NOV 04 2016"
+                android:id="@+id/tvDate2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross2" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross2"
+                android:id="@+id/tvNet2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="OCT 21 2016"
+                android:id="@+id/tvDate3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross3" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross3"
+                android:id="@+id/tvNet3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate3"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="OCT 07 2016"
+                android:id="@+id/tvDate4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross4" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross4"
+                android:id="@+id/tvNet4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate4"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="SEP 23 2016"
+                android:id="@+id/tvDate5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross5" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross5"
+                android:id="@+id/tvNet5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate5"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="SEP 09 2016"
+                android:id="@+id/tvDate6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross6" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross6"
+                android:id="@+id/tvNet6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate6"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="SEP 02 2016"
+                android:id="@+id/tvDate7"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross7" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross7"
+                android:id="@+id/tvNet7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate7"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="AUG 19 2016"
+                android:id="@+id/tvDate8"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross8" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross8"
+                android:id="@+id/tvNet8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate8"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="AUG 05 2016"
+                android:id="@+id/tvDate9"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text="Php 50,821.00"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tvGross9" />
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Php 60,000.00"
+                android:layout_toStartOf="@+id/tvGross9"
+                android:id="@+id/tvNet9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 Hours"
+                android:layout_below="@+id/tvDate9"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
